@@ -337,6 +337,7 @@ body {
 @supports (-webkit-touch-callout: none) {
   @media (max-width: 768px) {
     .landing__logo-image {
+      top: 120px;
       background-size: min(90vw, 56svh);
     }
   }
