@@ -279,7 +279,13 @@ body {
    ============================ */
 @media (max-width: 768px) {
   .landing__logo-bg {
-    transform: translateY(clamp(8px, 4vh, 32px));
+    transform: translateY(
+      clamp(
+        48px,
+        10svh,
+        96px
+      )
+    );
   }
   .landing__logo-image {
     background-size: min(88vw, 62vh);
