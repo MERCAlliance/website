@@ -65,6 +65,8 @@ body {
   position: absolute;
   inset: -12%;
   z-index: 0;
+  will-change: opacity, transform;
+  transform: translateZ(0);
 
   background:
     radial-gradient(
@@ -96,6 +98,13 @@ body {
     drop-shadow(0 0 90px rgba(255,120,40,0.45));
 
   animation: logo-breathe 2s ease-in-out infinite;
+}
+
+.landing__logo-bg::before,
+.landing__logo-image {
+  pointer-events: none;
+  will-change: transform, opacity, filter;
+  transform: translateZ(0);
 }
 
 
@@ -276,6 +285,10 @@ body {
 .landing__cta a {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+}
+
+body {
+  -webkit-transform: translateZ(0);
 }
 
 
