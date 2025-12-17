@@ -287,10 +287,24 @@ body {
       )
     );
   }
+  .landing {
+    padding-top: env(safe-area-inset-top);
+  }
   .landing__logo-image {
     background-size: min(88vw, 62vh);
   }
   .landing__content {
     margin-top: clamp(260px, 44vh, 520px);
+  }
+}
+
+/* ============================
+   IOS SUCKS - BUT SUPPORTED!
+   ============================ */
+@supports (-webkit-touch-callout: none) {
+  @media (max-width: 768px) {
+    .landing__logo-bg {
+      transform: translateY(72px);
+    }
   }
 }
